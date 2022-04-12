@@ -1,0 +1,127 @@
+html {font-size: 13px ;}
+.App {
+  position: relative;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+input {
+  width: 80%;
+  border: 0.1rem solid black;
+  border-radius: 0px;
+  margin-bottom: 0.5rem
+}
+
+button {
+  margin: 0.5rem;
+  background-color: white;
+  border: 0.1rem solid black;
+  color: black;
+  padding: 1rem 2rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1rem;
+  transition-duration: 0.4s;
+}
+
+button:hover {
+  background-color: black;
+  color: white;
+}
+
+.leftPanel {
+  position: sticky;
+  width: 30%;
+  top: 0px;
+  height: 99vh;
+  justify-content:center;
+  background-color: white;
+  overflow: scroll;
+}
+
+.Box {
+  width: 80%;
+  margin: 1rem;
+  padding-block: 1rem 2rem;
+  border: 0.1rem solid black;
+}
+
+.leftPanel .Box {
+  padding: 0;
+  width: 80%;
+  margin-inline: auto;
+}
+
+.CoinImage {
+  width: 80%;
+}
+
+.card {
+  height: fit-content;
+}
+
+.Title {
+  font-size: 1.5rem;
+}
+
+.Text {
+  font-size: 1.2rem;
+}
+
+.cards-container{
+  justify-content: center;
+  width: 70%;
+  margin: 4rem;
+  /* background-color: blueviolet; */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 15rem);
+}
+
+@media screen and (max-width: 900px) {
+  html {font-size: 11px ;}
+
+  button {
+    margin: 0.5rem;
+    background-color: white;
+    border: 0.1rem solid black;
+    color: black;
+    padding: 0.7rem 1rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1rem;
+    transition-duration: 0.4s;
+  }
+
+  .flexBox {
+    display:block;
+    justify-content: center;
+  }
+
+  .cards-container{
+    justify-content: center;
+    width: 100%;
+    margin: 1rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 15rem);
+  }
+
+  .leftPanel {
+    position: sticky;
+    width: 100%;
+    height:fit-content;
+    top: 0px;
+    justify-content:center;
+    background-color: white;
+  }
+
+  .leftPanel .Box {
+    padding: 0;
+    width: 100%;
+    margin: 0;
+  }
+}
